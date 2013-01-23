@@ -1,0 +1,795 @@
+[Sun Jan 13 00:27:29 2013] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Sun Jan 13 00:27:29 2013] [notice] Apache/2.2.22 (Ubuntu) DAV/2 mod_ssl/2.2.22 OpenSSL/1.0.1c mod_perl/2.0.5 Perl/v5.14.2 configured -- resuming normal operations
+[Sun Jan 13 01:31:04 2013] [error] [client 78.129.149.17] script '/var/www/sprawdza.php' not found or unable to stat
+[Sun Jan 13 03:11:35 2013] [error] [client 5.9.140.209] Directory index forbidden by Options directive: /var/www/
+[Sun Jan 13 08:30:53 2013] [error] [client 199.19.111.34] File does not exist: /var/www/my-http-headers
+[Sun Jan 13 11:11:54 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Sun Jan 13 11:11:54 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Sun Jan 13 11:11:54 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Sun Jan 13 11:11:54 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Sun Jan 13 12:07:49 2013] [error] [client 91.135.244.15] File does not exist: /var/www/user
+[Sun Jan 13 13:30:41 2013] [error] [client 96.254.171.2] File does not exist: /var/www/headers
+[Sun Jan 13 14:08:14 2013] [error] [client 65.52.111.220] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'piwik'@'localhost' (using password: YES) in /var/www/piwik_184/core/Tracker/Db/Mysqli.php on line 82, referer: http://jasminedragontea.com/
+[Sun Jan 13 14:08:14 2013] [error] [client 65.52.111.220] PHP Stack trace:, referer: http://jasminedragontea.com/
+[Sun Jan 13 14:08:14 2013] [error] [client 65.52.111.220] PHP   1. {main}() /var/www/piwik_184/piwik.php:0, referer: http://jasminedragontea.com/
+[Sun Jan 13 14:08:14 2013] [error] [client 65.52.111.220] PHP   2. Piwik_Tracker->main() /var/www/piwik_184/piwik.php:80, referer: http://jasminedragontea.com/
+[Sun Jan 13 14:08:14 2013] [error] [client 65.52.111.220] PHP   3. Piwik_Tracker::connectDatabaseIfNotConnected() /var/www/piwik_184/core/Tracker.php:230, referer: http://jasminedragontea.com/
+[Sun Jan 13 14:08:14 2013] [error] [client 65.52.111.220] PHP   4. Piwik_Tracker::connectPiwikTrackerDb() /var/www/piwik_184/core/Tracker.php:424, referer: http://jasminedragontea.com/
+[Sun Jan 13 14:08:14 2013] [error] [client 65.52.111.220] PHP   5. Piwik_Tracker_Db_Mysqli->connect() /var/www/piwik_184/core/Tracker.php:407, referer: http://jasminedragontea.com/
+[Sun Jan 13 14:08:14 2013] [error] [client 65.52.111.220] PHP   6. mysqli_connect() /var/www/piwik_184/core/Tracker/Db/Mysqli.php:82, referer: http://jasminedragontea.com/
+[Sun Jan 13 16:21:01 2013] [error] [client 192.114.71.13] WordPress database error Lost connection to MySQL server during query for query UPDATE `wp_options` SET `option_value` = '856df123b6244092b4590f853178cba1' WHERE `option_name` = '_transient_random_seed' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), the_post, WP_Query->the_post, do_action_ref_array, call_user_func_array, sfw_comment_pass_exist_check, wp_generate_password, wp_rand, set_transient, update_option, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:06 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_users WHERE ID = '1' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), the_post, WP_Query->the_post, setup_postdata, get_userdata, get_user_by, WP_User::get_data_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:11 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_users WHERE ID = '1' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), edit_post_link, get_edit_post_link, current_user_can, call_user_func_array, WP_User->has_cap, call_user_func_array, map_meta_cap, get_userdata, get_user_by, WP_User::get_data_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:17 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID, post_name, post_parent, post_type FROM wp_posts WHERE post_name IN ('black-carrots') AND (post_type = 'page' OR post_type = 'attachment') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, get_page_by_path, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:17 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.* FROM wp_posts  WHERE 1=1  AND wp_posts.post_name = 'black-carrots' AND wp_posts.post_type = 'post'  ORDER BY wp_posts.post_date DESC  made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:17 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT post_id FROM wp_postmeta, wp_posts WHERE ID = post_id AND post_type = 'post' AND meta_key = '_wp_old_slug' AND meta_value = 'black-carrots' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, wp_old_slug_redirect, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:17 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID FROM wp_posts WHERE post_name LIKE 'black-carrots%' AND post_type IN ('post', 'page', 'attachment') AND post_status = 'publish' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, redirect_canonical, redirect_guess_404_permalink, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:17 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:17 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:17 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:17 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:17 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:19 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID, post_name, post_parent, post_type FROM wp_posts WHERE post_name IN ('cpan-changing-permissions-on-osx') AND (post_type = 'page' OR post_type = 'attachment') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, get_page_by_path, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:19 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.* FROM wp_posts  WHERE 1=1  AND wp_posts.post_name = 'cpan-changing-permissions-on-osx' AND wp_posts.post_type = 'post'  ORDER BY wp_posts.post_date DESC  made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:19 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT post_id FROM wp_postmeta, wp_posts WHERE ID = post_id AND post_type = 'post' AND meta_key = '_wp_old_slug' AND meta_value = 'cpan-changing-permissions-on-osx' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, wp_old_slug_redirect, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:19 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID FROM wp_posts WHERE post_name LIKE 'cpan-changing-permissions-on-osx%' AND post_type IN ('post', 'page', 'attachment') AND post_status = 'publish' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, redirect_canonical, redirect_guess_404_permalink, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:19 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:19 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:19 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:19 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:23 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID, post_name, post_parent, post_type FROM wp_posts WHERE post_name IN ('analysis-chinese-phishing-scam') AND (post_type = 'page' OR post_type = 'attachment') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, get_page_by_path, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:28 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:28 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:30 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID, post_name, post_parent, post_type FROM wp_posts WHERE post_name IN ('spicnspan') AND (post_type = 'page' OR post_type = 'attachment') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, get_page_by_path, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:30 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:31 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:31 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.* FROM wp_posts  WHERE 1=1  AND wp_posts.post_name = 'spicnspan' AND wp_posts.post_type = 'post'  ORDER BY wp_posts.post_date DESC  made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:31 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query \n\t\t\t\t\tSELECT wp_term_taxonomy.term_id\n\t\t\t\t\tFROM wp_term_taxonomy\n\t\t\t\t\tINNER JOIN wp_terms USING (term_id)\n\t\t\t\t\tWHERE taxonomy = 'category'\n\t\t\t\t\tAND wp_terms.slug IN ('information-security')\n\t\t\t\t made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, WP_Tax_Query->get_sql, WP_Tax_Query->clean_query, WP_Tax_Query->transform_query, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:33 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.* FROM wp_posts  WHERE 1=1  AND wp_posts.post_name = 'analysis-chinese-phishing-scam' AND wp_posts.post_type = 'post'  ORDER BY wp_posts.post_date DESC  made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:33 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT post_id FROM wp_postmeta, wp_posts WHERE ID = post_id AND post_type = 'post' AND meta_key = '_wp_old_slug' AND meta_value = 'analysis-chinese-phishing-scam' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, wp_old_slug_redirect, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:33 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID FROM wp_posts WHERE post_name LIKE 'analysis-chinese-phishing-scam%' AND post_type IN ('post', 'page', 'attachment') AND post_status = 'publish' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, redirect_canonical, redirect_guess_404_permalink, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:34 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:34 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:34 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:34 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:35 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:35 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:35 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID, post_name, post_parent, post_type FROM wp_posts WHERE post_name IN ('basic-perl-log-function') AND (post_type = 'page' OR post_type = 'attachment') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, get_page_by_path, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.* FROM wp_posts  WHERE 1=1  AND wp_posts.post_name = 'basic-perl-log-function' AND wp_posts.post_type = 'post'  ORDER BY wp_posts.post_date DESC  made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT post_id FROM wp_postmeta, wp_posts WHERE ID = post_id AND post_type = 'post' AND meta_key = '_wp_old_slug' AND meta_value = 'basic-perl-log-function' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, wp_old_slug_redirect, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID FROM wp_posts WHERE post_name LIKE 'basic-perl-log-function%' AND post_type IN ('post', 'page', 'attachment') AND post_status = 'publish' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, redirect_canonical, redirect_guess_404_permalink, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query \n\t\t\t\t\tSELECT wp_term_taxonomy.term_id\n\t\t\t\t\tFROM wp_term_taxonomy\n\t\t\t\t\tINNER JOIN wp_terms USING (term_id)\n\t\t\t\t\tWHERE taxonomy = 'category'\n\t\t\t\t\tAND wp_terms.slug IN ('portfolio')\n\t\t\t\t made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, WP_Tax_Query->get_sql, WP_Tax_Query->clean_query, WP_Tax_Query->transform_query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'category' AND t.slug = 'portfolio' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, get_term_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND 0 = 1 AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish') GROUP BY wp_posts.ID ORDER BY wp_posts.post_date DESC LIMIT 0, 10 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'category' AND t.slug = 'portfolio' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->handle_404, WP_Query->get_queried_object, get_term_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:36 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:37 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:37 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'category' AND t.slug = 'information-security' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, get_term_by, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND 0 = 1 AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish') GROUP BY wp_posts.ID ORDER BY wp_posts.post_date DESC LIMIT 0, 10 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'category' AND t.slug = 'information-security' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->handle_404, WP_Query->get_queried_object, get_term_by, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID, post_name, post_parent, post_type FROM wp_posts WHERE post_name IN ('linux-shared-library-error') AND (post_type = 'page' OR post_type = 'attachment') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, get_page_by_path, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.* FROM wp_posts  WHERE 1=1  AND wp_posts.post_name = 'linux-shared-library-error' AND wp_posts.post_type = 'post'  ORDER BY wp_posts.post_date DESC  made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT post_id FROM wp_postmeta, wp_posts WHERE ID = post_id AND post_type = 'post' AND meta_key = '_wp_old_slug' AND meta_value = 'linux-shared-library-error' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, wp_old_slug_redirect, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID FROM wp_posts WHERE post_name LIKE 'linux-shared-library-error%' AND post_type IN ('post', 'page', 'attachment') AND post_status = 'publish' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, redirect_canonical, redirect_guess_404_permalink, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/category/tech/linux/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:38 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:39 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query \n\t\t\t\t\tSELECT wp_term_taxonomy.term_taxonomy_id\n\t\t\t\t\tFROM wp_term_taxonomy\n\t\t\t\t\tINNER JOIN wp_terms USING (term_id)\n\t\t\t\t\tWHERE taxonomy = 'post_tag'\n\t\t\t\t\tAND wp_terms.slug IN ('free-your-music')\n\t\t\t\t made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, WP_Tax_Query->get_sql, WP_Tax_Query->clean_query, WP_Tax_Query->transform_query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:39 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'post_tag' AND t.slug = 'free-your-music' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, get_term_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:39 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND 0 = 1 AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish') GROUP BY wp_posts.ID ORDER BY wp_posts.post_date DESC LIMIT 0, 10 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:39 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'post_tag' AND t.slug = 'free-your-music' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->handle_404, WP_Query->get_queried_object, get_term_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:39 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:39 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:39 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:39 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query \n\t\t\t\t\tSELECT wp_term_taxonomy.term_taxonomy_id\n\t\t\t\t\tFROM wp_term_taxonomy\n\t\t\t\t\tINNER JOIN wp_terms USING (term_id)\n\t\t\t\t\tWHERE taxonomy = 'post_tag'\n\t\t\t\t\tAND wp_terms.slug IN ('perl-2')\n\t\t\t\t made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, WP_Tax_Query->get_sql, WP_Tax_Query->clean_query, WP_Tax_Query->transform_query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'post_tag' AND t.slug = 'perl-2' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, get_term_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND 0 = 1 AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish') GROUP BY wp_posts.ID ORDER BY wp_posts.post_date DESC LIMIT 0, 10 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'post_tag' AND t.slug = 'perl-2' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->handle_404, WP_Query->get_queried_object, get_term_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID, post_name, post_parent, post_type FROM wp_posts WHERE post_name IN ('facebook-account-deletion-link') AND (post_type = 'page' OR post_type = 'attachment') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, get_page_by_path, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.* FROM wp_posts  WHERE 1=1  AND wp_posts.post_name = 'facebook-account-deletion-link' AND wp_posts.post_type = 'post'  ORDER BY wp_posts.post_date DESC  made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT post_id FROM wp_postmeta, wp_posts WHERE ID = post_id AND post_type = 'post' AND meta_key = '_wp_old_slug' AND meta_value = 'facebook-account-deletion-link' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, wp_old_slug_redirect, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID FROM wp_posts WHERE post_name LIKE 'facebook-account-deletion-link%' AND post_type IN ('post', 'page', 'attachment') AND post_status = 'publish' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, redirect_canonical, redirect_guess_404_permalink, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT post_id FROM wp_postmeta, wp_posts WHERE ID = post_id AND post_type = 'post' AND meta_key = '_wp_old_slug' AND meta_value = 'spicnspan' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, wp_old_slug_redirect, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT ID FROM wp_posts WHERE post_name LIKE 'spicnspan%' AND post_type IN ('post', 'page', 'attachment') AND post_status = 'publish' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, redirect_canonical, redirect_guess_404_permalink, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:40 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query \n\t\t\t\t\tSELECT wp_term_taxonomy.term_id\n\t\t\t\t\tFROM wp_term_taxonomy\n\t\t\t\t\tINNER JOIN wp_terms USING (term_id)\n\t\t\t\t\tWHERE taxonomy = 'category'\n\t\t\t\t\tAND wp_terms.slug IN ('rants')\n\t\t\t\t made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, WP_Tax_Query->get_sql, WP_Tax_Query->clean_query, WP_Tax_Query->transform_query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'category' AND t.slug = 'rants' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, get_term_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND 0 = 1 AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish') GROUP BY wp_posts.ID ORDER BY wp_posts.post_date DESC LIMIT 0, 10 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'category' AND t.slug = 'rants' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->handle_404, WP_Query->get_queried_object, get_term_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query \n\t\t\t\t\tSELECT wp_term_taxonomy.term_taxonomy_id\n\t\t\t\t\tFROM wp_term_taxonomy\n\t\t\t\t\tINNER JOIN wp_terms USING (term_id)\n\t\t\t\t\tWHERE taxonomy = 'post_tag'\n\t\t\t\t\tAND wp_terms.slug IN ('no-tabs')\n\t\t\t\t made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, WP_Tax_Query->get_sql, WP_Tax_Query->clean_query, WP_Tax_Query->transform_query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'post_tag' AND t.slug = 'no-tabs' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, get_term_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND 0 = 1 AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish') GROUP BY wp_posts.ID ORDER BY wp_posts.post_date DESC LIMIT 0, 10 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'post_tag' AND t.slug = 'no-tabs' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->handle_404, WP_Query->get_queried_object, get_term_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query \n\t\t\t\t\tSELECT wp_term_taxonomy.term_taxonomy_id\n\t\t\t\t\tFROM wp_term_taxonomy\n\t\t\t\t\tINNER JOIN wp_terms USING (term_id)\n\t\t\t\t\tWHERE taxonomy = 'post_tag'\n\t\t\t\t\tAND wp_terms.slug IN ('exit-popups')\n\t\t\t\t made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, WP_Tax_Query->get_sql, WP_Tax_Query->clean_query, WP_Tax_Query->transform_query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'post_tag' AND t.slug = 'exit-popups' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, get_term_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND 0 = 1 AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish') GROUP BY wp_posts.ID ORDER BY wp_posts.post_date DESC LIMIT 0, 10 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'post_tag' AND t.slug = 'exit-popups' LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->handle_404, WP_Query->get_queried_object, get_term_by, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_posts  WHERE (post_type = 'page' AND post_status = 'publish')     ORDER BY menu_order ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_header, locate_template, load_template, require_once('/themes/koi-improved/header.php'), wp_list_pages, get_pages, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT   wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_sidebar, locate_template, load_template, require_once('/themes/koi-improved/sidebar.php'), dynamic_sidebar, call_user_func_array, WP_Widget->display_callback, WP_Widget_Recent_Posts->widget, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish')  ORDER BY wp_posts.post_date DESC LIMIT 0, 5 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), query_posts, WP_Query->query, WP_Query->get_posts, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:21:41 2013] [error] [client 192.114.71.13] WordPress database error MySQL server has gone away for query SELECT * FROM wp_comments  WHERE comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/koi-improved/index.php'), get_footer, locate_template, load_template, require_once('/themes/koi-improved/footer.php'), include('/themes/koi-improved/recent-comments.php'), get_comments, WP_Comment_Query->query, referer: http://ngmarley.com/blog/category/tech/
+[Sun Jan 13 16:41:22 2013] [error] [client 65.55.213.243] File does not exist: /var/www/raw
+[Sun Jan 13 17:15:40 2013] [error] [client 50.99.242.245] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'piwik'@'localhost' (using password: YES) in /var/www/piwik_184/core/Tracker/Db/Mysqli.php on line 82, referer: http://jasminedragontea.com/hello-nations/
+[Sun Jan 13 17:15:40 2013] [error] [client 50.99.242.245] PHP Stack trace:, referer: http://jasminedragontea.com/hello-nations/
+[Sun Jan 13 17:15:40 2013] [error] [client 50.99.242.245] PHP   1. {main}() /var/www/piwik_184/piwik.php:0, referer: http://jasminedragontea.com/hello-nations/
+[Sun Jan 13 17:15:40 2013] [error] [client 50.99.242.245] PHP   2. Piwik_Tracker->main() /var/www/piwik_184/piwik.php:80, referer: http://jasminedragontea.com/hello-nations/
+[Sun Jan 13 17:15:40 2013] [error] [client 50.99.242.245] PHP   3. Piwik_Tracker::connectDatabaseIfNotConnected() /var/www/piwik_184/core/Tracker.php:230, referer: http://jasminedragontea.com/hello-nations/
+[Sun Jan 13 17:15:40 2013] [error] [client 50.99.242.245] PHP   4. Piwik_Tracker::connectPiwikTrackerDb() /var/www/piwik_184/core/Tracker.php:424, referer: http://jasminedragontea.com/hello-nations/
+[Sun Jan 13 17:15:40 2013] [error] [client 50.99.242.245] PHP   5. Piwik_Tracker_Db_Mysqli->connect() /var/www/piwik_184/core/Tracker.php:407, referer: http://jasminedragontea.com/hello-nations/
+[Sun Jan 13 17:15:40 2013] [error] [client 50.99.242.245] PHP   6. mysqli_connect() /var/www/piwik_184/core/Tracker/Db/Mysqli.php:82, referer: http://jasminedragontea.com/hello-nations/
+[Sun Jan 13 18:40:14 2013] [error] [client 50.56.187.112] Directory index forbidden by Options directive: /var/www/
+[Sun Jan 13 20:39:51 2013] [error] [client 176.61.139.128] Directory index forbidden by Options directive: /var/www/
+[18706]  core @0.000013> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[18706]  core @6.816017> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[18706]  core @6.837675> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[18706]  core @7.358180> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[18706]  core @0.000155> request: GET /login from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[18706]  core @0.028927> [hit #1]Trying to match 'GET /login' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[18706]  core @0.029131> [hit #1]Trying to match 'GET /login' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[18706]  core @0.071200> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[18706]  core @0.071572> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[18706]  core @0.574569> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[18706]  core @0.575301> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[18706]  core @0.854340> [hit #1]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[18706]  core @0.000147> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[18706]  core @0.010276> [hit #2]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[18706]  core @0.000164> request: GET /favicon.ico from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[18706]  core @0.000886> [hit #3]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[21018]  core @0.000013> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[21018]  core @0.296349> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[21018]  core @0.297453> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[21018]  core @0.304488> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[21018]  core @0.000236> request: POST /login from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[21018]  core @0.000804> [hit #1]Trying to match 'POST /login' against /^\/login$/ (generated from '/login') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[21018]  core @0.001054> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[21018]  core @0.001443> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[21018] debug @0.999964> [hit #1]Password correct in /var/www/listbubbles/lib/listbubbles.pm l. 74
+[21018]  core @1.010839> [hit #1]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[21018]  core @0.000203> request: GET / from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[21018]  core @0.000731> [hit #2]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[21018]  core @0.000923> [hit #2]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[21018]  core @0.001169> [hit #2]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[21018]  core @0.004332> [hit #2]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[21018]  core @0.000149> request: GET /list from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[21018]  core @0.000559> [hit #3]Trying to match 'GET /list' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[21018]  core @0.000709> [hit #3]Trying to match 'GET /list' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[21018]  core @0.000863> [hit #3]Trying to match 'GET /list' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[21018]  core @0.001033> [hit #3]Trying to match 'GET /list' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[21018]  core @0.001180> [hit #3]Trying to match 'GET /list' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[21018]  core @0.001329> [hit #3]Trying to match 'GET /list' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[21018]  core @0.001483> [hit #3]Trying to match 'GET /list' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[21018]  core @0.001621> [hit #3]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[21018]  core @0.001878> [hit #3]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[21018]  core @0.031466> [hit #3]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[21018]  core @0.032374> [hit #3]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[21018]  core @0.110303> [hit #3]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[21018]  core @0.000146> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[21018]  core @0.003366> [hit #4]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[21018]  core @0.000147> request: GET /favicon.ico from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[21018]  core @0.000811> [hit #5]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[18841]  core @0.000019> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[18841]  core @0.289856> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[18841]  core @0.291056> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[18841]  core @0.298132> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[18841]  core @0.000116> request: GET /list/34 from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[18841]  core @0.000527> [hit #1]Trying to match 'GET /list/34' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[18841]  core @0.000678> [hit #1]Trying to match 'GET /list/34' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[18841]  core @0.000821> [hit #1]Trying to match 'GET /list/34' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[18841]  core @0.000985> [hit #1]Trying to match 'GET /list/34' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[18841]  core @0.001154> [hit #1]Trying to match 'GET /list/34' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[18841]  core @0.001296> [hit #1]Trying to match 'GET /list/34' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[18841]  core @0.001439> [hit #1]Trying to match 'GET /list/34' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[18841]  core @0.001581> [hit #1]Trying to match 'GET /list/34' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[18841]  core @0.001713> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[18841]  core @0.001840> [hit #1]  --> named tokens are: id in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 130
+[18841]  core @0.002179> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[18841]  core @0.265284> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[18841]  core @0.266191> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[18841]  core @0.322229> [hit #1]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[18841]  core @0.000146> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[18841]  core @0.004184> [hit #2]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[18841]  core @0.000181> request: GET /favicon.ico from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[18841]  core @0.000801> [hit #3]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[Sun Jan 13 23:11:01 2013] [error] [client 176.61.139.128] script '/var/www/sprawdza.php' not found or unable to stat
+[Mon Jan 14 00:54:37 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 00:54:38 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 00:54:40 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 00:54:40 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 04:27:08 2013] [error] [client 46.11.79.5] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'piwik'@'localhost' (using password: YES) in /var/www/piwik_184/core/Tracker/Db/Mysqli.php on line 82, referer: http://jasminedragontea.com/
+[Mon Jan 14 04:27:08 2013] [error] [client 46.11.79.5] PHP Stack trace:, referer: http://jasminedragontea.com/
+[Mon Jan 14 04:27:08 2013] [error] [client 46.11.79.5] PHP   1. {main}() /var/www/piwik_184/piwik.php:0, referer: http://jasminedragontea.com/
+[Mon Jan 14 04:27:08 2013] [error] [client 46.11.79.5] PHP   2. Piwik_Tracker->main() /var/www/piwik_184/piwik.php:80, referer: http://jasminedragontea.com/
+[Mon Jan 14 04:27:08 2013] [error] [client 46.11.79.5] PHP   3. Piwik_Tracker::connectDatabaseIfNotConnected() /var/www/piwik_184/core/Tracker.php:230, referer: http://jasminedragontea.com/
+[Mon Jan 14 04:27:08 2013] [error] [client 46.11.79.5] PHP   4. Piwik_Tracker::connectPiwikTrackerDb() /var/www/piwik_184/core/Tracker.php:424, referer: http://jasminedragontea.com/
+[Mon Jan 14 04:27:08 2013] [error] [client 46.11.79.5] PHP   5. Piwik_Tracker_Db_Mysqli->connect() /var/www/piwik_184/core/Tracker.php:407, referer: http://jasminedragontea.com/
+[Mon Jan 14 04:27:08 2013] [error] [client 46.11.79.5] PHP   6. mysqli_connect() /var/www/piwik_184/core/Tracker/Db/Mysqli.php:82, referer: http://jasminedragontea.com/
+[Mon Jan 14 06:34:58 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 06:34:58 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 06:34:59 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 06:34:59 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 13:00:38 2013] [error] [client 202.46.51.53] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 13:01:25 2013] [error] [client 119.63.193.196] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 13:35:50 2013] [error] [client 206.253.226.23] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 17:33:10 2013] [error] [client 96.254.171.2] File does not exist: /var/www/headers
+[Mon Jan 14 18:13:00 2013] [error] [client 69.58.178.59] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 18:13:01 2013] [error] [client 69.58.178.59] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 18:22:09 2013] [notice] caught SIGTERM, shutting down
+[Mon Jan 14 18:24:47 2013] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Mon Jan 14 18:24:47 2013] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Mon Jan 14 18:24:47 2013] [notice] Apache/2.2.22 (Ubuntu) DAV/2 mod_ssl/2.2.22 OpenSSL/1.0.1c mod_perl/2.0.5 Perl/v5.14.2 configured -- resuming normal operations
+[Mon Jan 14 18:30:46 2013] [error] [client 92.66.127.86] Directory index forbidden by Options directive: /var/www/BoggleGame-Dancer/
+[Mon Jan 14 21:41:02 2013] [error] [client 5.34.242.184] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 23:04:58 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 23:04:58 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 23:04:59 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Mon Jan 14 23:05:00 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Tue Jan 15 00:32:17 2013] [error] [client 66.249.74.118] Directory index forbidden by Options directive: /var/www/
+[Tue Jan 15 00:50:46 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Tue Jan 15 00:50:47 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Tue Jan 15 00:50:47 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Tue Jan 15 00:50:48 2013] [error] [client 65.111.177.188] Directory index forbidden by Options directive: /var/www/
+[Tue Jan 15 01:34:58 2013] [error] [client 65.55.213.243] File does not exist: /var/www/raw
+[31139]  core @0.000014> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[31139]  core @1.292680> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[31139]  core @1.301160> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[31139]  core @1.606650> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[31139]  core @0.000153> request: GET / from 178.255.87.241 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[31139]  core @0.000494> [hit #1]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31139]  core @0.000628> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[31139]  core @0.000879> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[31139]  core @0.057446> [hit #1]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[31139]  core @0.000161> request: GET /login from 178.255.87.241 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[31139]  core @0.008186> [hit #2]Trying to match 'GET /login' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31139]  core @0.008343> [hit #2]Trying to match 'GET /login' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31139]  core @0.008489> [hit #2]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[31139]  core @0.008754> [hit #2]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[31139]  core @0.011410> [hit #2]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[31139]  core @0.012144> [hit #2]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[31139]  core @0.087260> [hit #2]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[Tue Jan 15 03:48:45 2013] [error] [client 5.34.242.184] script '/var/www/sprawdza.php' not found or unable to stat
+[Tue Jan 15 04:37:19 2013] [error] [client 92.66.127.86] File does not exist: /var/www/piwik, referer: http://jasminedragontea.com/
+[6242]  core @0.000015> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[6242]  core @0.837260> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[6242]  core @0.838618> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[6242]  core @0.846051> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[6242]  core @0.000132> request: GET /login from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[6242]  core @0.006674> [hit #1]Trying to match 'GET /login' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.006860> [hit #1]Trying to match 'GET /login' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.007010> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[6242]  core @0.007265> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[6242]  core @0.030082> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[6242]  core @0.030886> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[6242]  core @0.075637> [hit #1]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[6242]  core @0.000176> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[6242]  core @0.006466> [hit #2]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[6242]  core @0.000145> request: POST /login from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[6242]  core @0.000531> [hit #3]Trying to match 'POST /login' against /^\/login$/ (generated from '/login') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.000675> [hit #3]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[6242]  core @0.000970> [hit #3]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[6242] debug @0.679576> [hit #3]Password correct in /var/www/listbubbles/lib/listbubbles.pm l. 74
+[6242]  core @0.683124> [hit #3]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[6242]  core @0.000165> request: GET / from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[6242]  core @0.000542> [hit #4]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.000685> [hit #4]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[6242]  core @0.000923> [hit #4]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[6242]  core @0.003464> [hit #4]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[6242]  core @0.000147> request: GET /list from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[6242]  core @0.000530> [hit #5]Trying to match 'GET /list' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.000703> [hit #5]Trying to match 'GET /list' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.000859> [hit #5]Trying to match 'GET /list' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.001003> [hit #5]Trying to match 'GET /list' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.001148> [hit #5]Trying to match 'GET /list' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.001292> [hit #5]Trying to match 'GET /list' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.001440> [hit #5]Trying to match 'GET /list' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.001575> [hit #5]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[6242]  core @0.001841> [hit #5]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[6242]  core @0.030387> [hit #5]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[6242]  core @0.031719> [hit #5]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[6242]  core @0.054035> [hit #5]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[6242]  core @0.000200> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[6242]  core @0.000872> [hit #6]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[6242]  core @0.000149> request: GET /favicon.ico from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[6242]  core @0.000782> [hit #7]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[6242]  core @0.000147> request: GET /list/34 from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[6242]  core @0.000528> [hit #8]Trying to match 'GET /list/34' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.000688> [hit #8]Trying to match 'GET /list/34' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.000835> [hit #8]Trying to match 'GET /list/34' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.001010> [hit #8]Trying to match 'GET /list/34' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.001158> [hit #8]Trying to match 'GET /list/34' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.001303> [hit #8]Trying to match 'GET /list/34' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.001451> [hit #8]Trying to match 'GET /list/34' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.001598> [hit #8]Trying to match 'GET /list/34' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[6242]  core @0.001735> [hit #8]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[6242]  core @0.001865> [hit #8]  --> named tokens are: id in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 130
+[6242]  core @0.002147> [hit #8]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[6242]  core @0.036617> [hit #8]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[6242]  core @0.037575> [hit #8]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[6242]  core @0.047774> [hit #8]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[6242]  core @0.000164> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[6242]  core @0.000784> [hit #9]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[6242]  core @0.000166> request: GET /favicon.ico from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[6242]  core @0.000784> [hit #10]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[31094]  core @0.000014> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[31094]  core @0.280329> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[31094]  core @0.281922> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[31094]  core @0.290534> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[31094]  core @0.000142> request: POST /list/item from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[31094]  core @0.000535> [hit #1]Trying to match 'POST /list/item' against /^\/login$/ (generated from '/login') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31094]  core @0.000702> [hit #1]Trying to match 'POST /list/item' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31094]  core @0.000848> [hit #1]Trying to match 'POST /list/item' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31094]  core @0.000992> [hit #1]Trying to match 'POST /list/item' against /^\/list\/item\/?$/ (generated from '/list/item/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31094]  core @0.001124> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[31094]  core @0.001374> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[31094]  core @0.295279> [hit #1]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[31094]  core @0.000191> request: GET /list/34 from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[31094]  core @0.000721> [hit #2]Trying to match 'GET /list/34' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31094]  core @0.000934> [hit #2]Trying to match 'GET /list/34' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31094]  core @0.001187> [hit #2]Trying to match 'GET /list/34' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31094]  core @0.001336> [hit #2]Trying to match 'GET /list/34' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31094]  core @0.001483> [hit #2]Trying to match 'GET /list/34' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31094]  core @0.001628> [hit #2]Trying to match 'GET /list/34' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31094]  core @0.001793> [hit #2]Trying to match 'GET /list/34' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31094]  core @0.001939> [hit #2]Trying to match 'GET /list/34' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[31094]  core @0.002116> [hit #2]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[31094]  core @0.002247> [hit #2]  --> named tokens are: id in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 130
+[31094]  core @0.002481> [hit #2]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[31094]  core @0.020169> [hit #2]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[31094]  core @0.021471> [hit #2]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[31094]  core @0.069738> [hit #2]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[31094]  core @0.000147> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[31094]  core @0.004362> [hit #3]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[31094]  core @0.000161> request: GET /favicon.ico from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[31094]  core @0.000861> [hit #4]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[Tue Jan 15 12:16:45 2013] [notice] SIGHUP received.  Attempting to restart
+[Tue Jan 15 12:16:45 2013] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Tue Jan 15 12:16:45 2013] [notice] Apache/2.2.22 (Ubuntu) DAV/2 mod_ssl/2.2.22 OpenSSL/1.0.1c mod_perl/2.0.5 Perl/v5.14.2 configured -- resuming normal operations
+[13431]  core @0.000018> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[13431]  core @0.493878> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[13431]  core @0.495538> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[13431]  core @0.502810> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13431]  core @0.000123> request: GET / from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13431]  core @0.000449> [hit #1]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13431]  core @0.000608> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13431]  core @0.000967> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13431]  core @0.056463> [hit #1]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[13432]  core @0.000016> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[13432]  core @0.078572> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[13432]  core @0.079633> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[13432]  core @0.087011> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13432]  core @0.000118> request: GET /login from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13432]  core @0.000449> [hit #1]Trying to match 'GET /login' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13432]  core @0.000603> [hit #1]Trying to match 'GET /login' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13432]  core @0.000740> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13432]  core @0.001006> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13432]  core @0.010972> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13432]  core @0.011659> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13432]  core @0.069015> [hit #1]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[13433]  core @0.000013> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[13433]  core @0.082995> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[13433]  core @0.084278> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[13433]  core @0.093593> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13433]  core @0.000148> request: GET /login/ from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13433]  core @0.000488> [hit #1]Trying to match 'GET /login/' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13433]  core @0.000641> [hit #1]Trying to match 'GET /login/' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13433]  core @0.000820> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13433]  core @0.001112> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13433]  core @0.010018> [hit #1]Trying to match 'GET /login' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13433]  core @0.010186> [hit #1]Trying to match 'GET /login' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13433]  core @0.010329> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13433]  core @0.010536> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13433]  core @0.012644> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13433]  core @0.013376> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13433]  core @0.059178> [hit #1]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[Tue Jan 15 12:24:02 2013] [notice] SIGHUP received.  Attempting to restart
+[Tue Jan 15 12:24:03 2013] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Tue Jan 15 12:24:03 2013] [notice] Apache/2.2.22 (Ubuntu) DAV/2 mod_ssl/2.2.22 OpenSSL/1.0.1c mod_perl/2.0.5 Perl/v5.14.2 configured -- resuming normal operations
+[13767]  core @0.000019> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[13767]  core @0.074050> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[13767]  core @0.075079> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[13767]  core @0.082211> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13767]  core @0.000120> request: GET /login/ from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13767]  core @0.000445> [hit #1]Trying to match 'GET /login/' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13767]  core @0.000660> [hit #1]Trying to match 'GET /login/' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13767]  core @0.000845> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13767]  core @0.001116> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13767]  core @0.009253> [hit #1]Trying to match 'GET /login' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13767]  core @0.009413> [hit #1]Trying to match 'GET /login' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13767]  core @0.009551> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13767]  core @0.009738> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13767]  core @0.011492> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13767]  core @0.012186> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13767]  core @0.051874> [hit #1]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[Tue Jan 15 12:24:33 2013] [error] [client 188.165.230.147] Directory index forbidden by Options directive: /var/www/, referer: http://www.finddotcom.com/
+[13768]  core @0.000012> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[13768]  core @0.081063> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[13768]  core @0.082202> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[13768]  core @0.090195> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13768]  core @0.000155> request: GET /login from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13768]  core @0.000549> [hit #1]Trying to match 'GET /login' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.000804> [hit #1]Trying to match 'GET /login' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.000943> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13768]  core @0.001195> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768]  core @0.010794> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768]  core @0.011512> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768]  core @0.055670> [hit #1]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13768]  core @0.000146> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13768]  core @0.003471> [hit #2]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13768]  core @0.000171> request: POST /login from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13768]  core @0.000553> [hit #3]Trying to match 'POST /login' against /^\/login$/ (generated from '/login') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.000721> [hit #3]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13768]  core @0.000992> [hit #3]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768] debug @0.495782> [hit #3]Password correct in /var/www/listbubbles/lib/listbubbles.pm l. 74
+[13768]  core @0.499959> [hit #3]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13768]  core @0.000165> request: GET / from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13768]  core @0.000544> [hit #4]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.000688> [hit #4]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13768]  core @0.000932> [hit #4]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768]  core @0.003854> [hit #4]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13768]  core @0.000166> request: GET /list from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13768]  core @0.000550> [hit #5]Trying to match 'GET /list' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.000694> [hit #5]Trying to match 'GET /list' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.000869> [hit #5]Trying to match 'GET /list' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001014> [hit #5]Trying to match 'GET /list' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001222> [hit #5]Trying to match 'GET /list' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001400> [hit #5]Trying to match 'GET /list' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001550> [hit #5]Trying to match 'GET /list' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001685> [hit #5]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13768]  core @0.001943> [hit #5]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768]  core @0.018567> [hit #5]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768]  core @0.019490> [hit #5]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768]  core @0.043198> [hit #5]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13768]  core @0.000147> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13768]  core @0.000818> [hit #6]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13768]  core @0.000146> request: GET /favicon.ico from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13768]  core @0.000893> [hit #7]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13768]  core @0.000148> request: GET /list/34 from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13768]  core @0.000625> [hit #8]Trying to match 'GET /list/34' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.000793> [hit #8]Trying to match 'GET /list/34' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001037> [hit #8]Trying to match 'GET /list/34' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001249> [hit #8]Trying to match 'GET /list/34' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001427> [hit #8]Trying to match 'GET /list/34' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001585> [hit #8]Trying to match 'GET /list/34' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001734> [hit #8]Trying to match 'GET /list/34' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001881> [hit #8]Trying to match 'GET /list/34' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.002045> [hit #8]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13768]  core @0.002189> [hit #8]  --> named tokens are: id in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 130
+[13768]  core @0.002431> [hit #8]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768]  core @0.016075> [hit #8]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768]  core @0.016970> [hit #8]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768]  core @0.026204> [hit #8]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13768]  core @0.000203> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13768]  core @0.001227> [hit #9]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13768]  core @0.000193> request: GET /favicon.ico from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13768]  core @0.001073> [hit #10]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[13769]  core @0.000013> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[13769]  core @0.081495> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[13769]  core @0.082629> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[13769]  core @0.089713> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13769]  core @0.000147> request: GET / from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13769]  core @0.000504> [hit #1]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13769]  core @0.000659> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13769]  core @0.000966> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13769]  core @0.012666> [hit #1]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13769]  core @0.000218> request: GET /login from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13769]  core @0.000776> [hit #2]Trying to match 'GET /login' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13769]  core @0.001037> [hit #2]Trying to match 'GET /login' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13769]  core @0.001251> [hit #2]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13769]  core @0.001611> [hit #2]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13769]  core @0.003701> [hit #2]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13769]  core @0.004475> [hit #2]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13769]  core @0.046466> [hit #2]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13769]  core @0.000145> request: GET /css/style.css from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13769]  core @0.004221> [hit #3]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13769]  core @0.000202> request: GET /favicon.ico from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13769]  core @0.000986> [hit #4]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13769]  core @0.000144> request: POST /login from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13769]  core @0.000536> [hit #5]Trying to match 'POST /login' against /^\/login$/ (generated from '/login') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13769]  core @0.000794> [hit #5]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13769]  core @0.001155> [hit #5]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13769] debug @0.186265> [hit #5]Password correct in /var/www/listbubbles/lib/listbubbles.pm l. 74
+[13769]  core @0.189681> [hit #5]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13769]  core @0.000173> request: GET / from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13769]  core @0.000583> [hit #6]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13769]  core @0.000728> [hit #6]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13769]  core @0.000963> [hit #6]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13769]  core @0.003597> [hit #6]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13769]  core @0.000179> request: GET /list from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13769]  core @0.000666> [hit #7]Trying to match 'GET /list' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13769]  core @0.000863> [hit #7]Trying to match 'GET /list' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13769]  core @0.001075> [hit #7]Trying to match 'GET /list' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13769]  core @0.001298> [hit #7]Trying to match 'GET /list' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13769]  core @0.001498> [hit #7]Trying to match 'GET /list' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13769]  core @0.001698> [hit #7]Trying to match 'GET /list' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13769]  core @0.001880> [hit #7]Trying to match 'GET /list' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13769]  core @0.002020> [hit #7]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13769]  core @0.002300> [hit #7]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13769]  core @0.021147> [hit #7]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13769]  core @0.022025> [hit #7]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13769]  core @0.069299> [hit #7]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13769]  core @0.000147> request: GET /css/style.css from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13769]  core @0.000888> [hit #8]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13769]  core @0.000243> request: GET /favicon.ico from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13769]  core @0.001190> [hit #9]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13768]  core @0.000223> request: GET /list/34 from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13768]  core @0.000666> [hit #11]Trying to match 'GET /list/34' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.000862> [hit #11]Trying to match 'GET /list/34' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001013> [hit #11]Trying to match 'GET /list/34' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001182> [hit #11]Trying to match 'GET /list/34' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001329> [hit #11]Trying to match 'GET /list/34' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001475> [hit #11]Trying to match 'GET /list/34' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001624> [hit #11]Trying to match 'GET /list/34' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001773> [hit #11]Trying to match 'GET /list/34' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13768]  core @0.001926> [hit #11]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13768]  core @0.002058> [hit #11]  --> named tokens are: id in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 130
+[13768]  core @0.002342> [hit #11]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768]  core @0.021095> [hit #11]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768]  core @0.021976> [hit #11]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13768]  core @0.026589> [hit #11]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13768]  core @0.000148> request: GET /css/style.css from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13768]  core @0.000785> [hit #12]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13768]  core @0.000148> request: GET /favicon.ico from 92.66.127.86 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13768]  core @0.000796> [hit #13]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[14208]  core @0.000012> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[14208]  core @0.521040> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[14208]  core @0.522709> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[14208]  core @0.588926> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[14208]  core @0.000154> request: GET /login from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[14208]  core @0.007776> [hit #1]Trying to match 'GET /login' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.008001> [hit #1]Trying to match 'GET /login' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.008163> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[14208]  core @0.008487> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[14208]  core @0.017249> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[14208]  core @0.018159> [hit #1]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[14208]  core @0.092118> [hit #1]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[14208]  core @0.000145> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[14208]  core @0.031594> [hit #2]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[14208]  core @0.000148> request: GET /favicon.ico from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[14208]  core @0.000882> [hit #3]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[14208]  core @0.000154> request: POST /login from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[14208]  core @0.000540> [hit #4]Trying to match 'POST /login' against /^\/login$/ (generated from '/login') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.000704> [hit #4]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[14208]  core @0.000945> [hit #4]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[14208] debug @0.855587> [hit #4]Password correct in /var/www/listbubbles/lib/listbubbles.pm l. 74
+[14208]  core @0.905515> [hit #4]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[14208]  core @0.000142> request: GET / from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[14208]  core @0.000517> [hit #5]Trying to match 'GET /' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.000667> [hit #5]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[14208]  core @0.000951> [hit #5]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[14208]  core @0.003431> [hit #5]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[14208]  core @0.000175> request: GET /list from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[14208]  core @0.000657> [hit #6]Trying to match 'GET /list' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.000808> [hit #6]Trying to match 'GET /list' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.000966> [hit #6]Trying to match 'GET /list' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.001171> [hit #6]Trying to match 'GET /list' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.001369> [hit #6]Trying to match 'GET /list' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.001518> [hit #6]Trying to match 'GET /list' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.001670> [hit #6]Trying to match 'GET /list' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.001807> [hit #6]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[14208]  core @0.002043> [hit #6]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[14208]  core @0.019447> [hit #6]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[14208]  core @0.020636> [hit #6]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[14208]  core @0.048515> [hit #6]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[14208]  core @0.000155> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[14208]  core @0.000834> [hit #7]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[14208]  core @0.000208> request: GET /favicon.ico from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[14208]  core @0.000956> [hit #8]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[14208]  core @0.000176> request: GET /list/34 from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[14208]  core @0.000596> [hit #9]Trying to match 'GET /list/34' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.000775> [hit #9]Trying to match 'GET /list/34' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.000924> [hit #9]Trying to match 'GET /list/34' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.001080> [hit #9]Trying to match 'GET /list/34' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.001311> [hit #9]Trying to match 'GET /list/34' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.001550> [hit #9]Trying to match 'GET /list/34' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.001725> [hit #9]Trying to match 'GET /list/34' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.001880> [hit #9]Trying to match 'GET /list/34' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[14208]  core @0.002018> [hit #9]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[14208]  core @0.002149> [hit #9]  --> named tokens are: id in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 130
+[14208]  core @0.002406> [hit #9]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[14208]  core @0.023217> [hit #9]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[14208]  core @0.024104> [hit #9]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[14208]  core @0.035322> [hit #9]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[14208]  core @0.000171> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[14208]  core @0.001028> [hit #10]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[14208]  core @0.000149> request: GET /favicon.ico from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[14208]  core @0.000774> [hit #11]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[13772]  core @0.000013> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[13772]  core @0.366301> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[13772]  core @0.367962> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[13772]  core @0.401642> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13772]  core @0.000146> request: POST /list/item from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13772]  core @0.000543> [hit #1]Trying to match 'POST /list/item' against /^\/login$/ (generated from '/login') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13772]  core @0.000734> [hit #1]Trying to match 'POST /list/item' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13772]  core @0.000881> [hit #1]Trying to match 'POST /list/item' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13772]  core @0.001026> [hit #1]Trying to match 'POST /list/item' against /^\/list\/item\/?$/ (generated from '/list/item/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13772]  core @0.001186> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13772]  core @0.001449> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13772]  core @0.548693> [hit #1]response: 302 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13772]  core @0.000143> request: GET /list/34 from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13772]  core @0.000554> [hit #2]Trying to match 'GET /list/34' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13772]  core @0.000718> [hit #2]Trying to match 'GET /list/34' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13772]  core @0.000896> [hit #2]Trying to match 'GET /list/34' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13772]  core @0.001043> [hit #2]Trying to match 'GET /list/34' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13772]  core @0.001208> [hit #2]Trying to match 'GET /list/34' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13772]  core @0.001359> [hit #2]Trying to match 'GET /list/34' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13772]  core @0.001508> [hit #2]Trying to match 'GET /list/34' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13772]  core @0.001652> [hit #2]Trying to match 'GET /list/34' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[13772]  core @0.001787> [hit #2]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[13772]  core @0.001970> [hit #2]  --> named tokens are: id in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 130
+[13772]  core @0.002236> [hit #2]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13772]  core @0.040758> [hit #2]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13772]  core @0.041720> [hit #2]entering before_template_render hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[13772]  core @0.179122> [hit #2]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13772]  core @0.000171> request: GET /css/style.css from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13772]  core @0.028012> [hit #3]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+Use of uninitialized value $location in string eq at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 141.
+Use of uninitialized value $location in regexp compilation at /usr/local/share/perl/5.14.2/Plack/Handler/Apache2.pm line 145.
+[13772]  core @0.000265> request: GET /favicon.ico from 216.96.86.26 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[13772]  core @0.000981> [hit #4]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[Tue Jan 15 13:48:26 2013] [notice] caught SIGTERM, shutting down

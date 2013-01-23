@@ -1,0 +1,172 @@
+[20442]  core @0.000012> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[20442]  core @0.043023> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[20442]  core @0.044299> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[20442]  core @0.053770> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+[20444]  core @0.001057> request: GET /whatismyip from - in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[20444]  core @0.002328> [hit #1]Trying to match 'GET /whatismyip' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20444]  core @0.002523> [hit #1]Trying to match 'GET /whatismyip' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20444]  core @0.003030> [hit #1]Trying to match 'GET /whatismyip' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20444]  core @0.003286> [hit #1]Trying to match 'GET /whatismyip' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20444]  core @0.003525> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20444]  core @0.003780> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20444]  core @0.004045> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20444]  core @0.004307> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20444]  core @0.004528> [hit #1]Trying to match 'GET /whatismyip' against /^\/item\/([^\/]+)$/ (generated from '/item/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20444]  core @0.004754> [hit #1]Trying to match 'GET /whatismyip' against /^\/whatismyip$/ (generated from '/whatismyip') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20444]  core @0.004938> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[20444]  core @0.005584> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[20444] ah yeah @0.022648> [hit #1] in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 177
+[20444] error @0.027228> [hit #1]error messages here in /var/www/listbubbles/lib/listbubbles.pm l. 455
+[20444] error @0.027784> [hit #1]{'DANCER_APPDIR' => '/var/www/listbubbles/bin/..','HOME' => '/root','LANG' => 'en_US.utf8','LOGNAME' => 'www-data','LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:','MAIL' => '/var/mail/www-data','PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin','PLACK_ENV' => 'development','SHELL' => '/bin/bash','SUDO_COMMAND' => '/usr/local/bin/plackup -E development -s Starman --workers=4 -l /tmp/starman.sock --access-log=/var/log/plack/access.log --error-log=/var/log/plack/error.log -a bin/app.pl -D','SUDO_GID' => '0','SUDO_UID' => '0','SUDO_USER' => 'root','TERM' => 'xterm','USER' => 'www-data','USERNAME' => 'www-data'} in /var/www/listbubbles/lib/listbubbles.pm l. 456
+[20444] error @0.028047> [hit #1]{} in /var/www/listbubbles/lib/listbubbles.pm l. 457
+[20444]  core @0.038162> [hit #1]response: 500 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[20447]  core @0.001151> request: GET /whatismyip from - in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[20447]  core @0.002944> [hit #1]Trying to match 'GET /whatismyip' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20447]  core @0.003234> [hit #1]Trying to match 'GET /whatismyip' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20447]  core @0.003542> [hit #1]Trying to match 'GET /whatismyip' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20447]  core @0.003739> [hit #1]Trying to match 'GET /whatismyip' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20447]  core @0.003954> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20447]  core @0.004117> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20447]  core @0.004295> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20447]  core @0.004453> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20447]  core @0.004629> [hit #1]Trying to match 'GET /whatismyip' against /^\/item\/([^\/]+)$/ (generated from '/item/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20447]  core @0.004847> [hit #1]Trying to match 'GET /whatismyip' against /^\/whatismyip$/ (generated from '/whatismyip') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20447]  core @0.005056> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[20447]  core @0.005886> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[20447] error @0.007620> [hit #1]request to GET /whatismyip crashed: Can't open '/tmp/dancer-sessions/189966414385475357413803571330931497.yml': Permission denied in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 98
+[20559]  core @0.000012> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[20559]  core @0.038813> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[20559]  core @0.039872> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[20559]  core @0.048083> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+[20561]  core @0.001072> request: GET /whatismyip from - in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[20561]  core @0.002688> [hit #1]Trying to match 'GET /whatismyip' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20561]  core @0.002956> [hit #1]Trying to match 'GET /whatismyip' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20561]  core @0.003191> [hit #1]Trying to match 'GET /whatismyip' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20561]  core @0.003457> [hit #1]Trying to match 'GET /whatismyip' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20561]  core @0.003669> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20561]  core @0.003885> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20561]  core @0.004120> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20561]  core @0.004360> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20561]  core @0.004575> [hit #1]Trying to match 'GET /whatismyip' against /^\/item\/([^\/]+)$/ (generated from '/item/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20561]  core @0.004793> [hit #1]Trying to match 'GET /whatismyip' against /^\/whatismyip$/ (generated from '/whatismyip') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20561]  core @0.004992> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[20561]  core @0.005775> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[20561]  core @0.031363> [hit #1]response: 500 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[20562]  core @0.001071> request: GET /whatismyip from - in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[20562]  core @0.002670> [hit #1]Trying to match 'GET /whatismyip' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20562]  core @0.002903> [hit #1]Trying to match 'GET /whatismyip' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20562]  core @0.003079> [hit #1]Trying to match 'GET /whatismyip' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20562]  core @0.003260> [hit #1]Trying to match 'GET /whatismyip' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20562]  core @0.003418> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20562]  core @0.003617> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20562]  core @0.003797> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20562]  core @0.003997> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20562]  core @0.004243> [hit #1]Trying to match 'GET /whatismyip' against /^\/item\/([^\/]+)$/ (generated from '/item/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20562]  core @0.004469> [hit #1]Trying to match 'GET /whatismyip' against /^\/whatismyip$/ (generated from '/whatismyip') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20562]  core @0.004682> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[20562]  core @0.005575> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[20562]  core @0.031262> [hit #1]response: 500 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[20612]  core @0.000018> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[20612]  core @0.044287> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[20612]  core @0.045904> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[20612]  core @0.056116> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+[20614]  core @0.001051> request: GET /whatismyip from - in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[20614]  core @0.002622> [hit #1]Trying to match 'GET /whatismyip' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20614]  core @0.002877> [hit #1]Trying to match 'GET /whatismyip' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20614]  core @0.003134> [hit #1]Trying to match 'GET /whatismyip' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20614]  core @0.003346> [hit #1]Trying to match 'GET /whatismyip' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20614]  core @0.003555> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20614]  core @0.003766> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20614]  core @0.004017> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20614]  core @0.004235> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20614]  core @0.004445> [hit #1]Trying to match 'GET /whatismyip' against /^\/item\/([^\/]+)$/ (generated from '/item/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20614]  core @0.004660> [hit #1]Trying to match 'GET /whatismyip' against /^\/whatismyip$/ (generated from '/whatismyip') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20614]  core @0.004857> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[20614]  core @0.005620> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[20614]  core @0.031485> [hit #1]response: 500 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[20659]  core @0.000011> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[20659]  core @0.039779> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[20659]  core @0.041251> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[20659]  core @0.051307> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+[20661]  core @0.001068> request: GET /whatismyip from - in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[20661]  core @0.002701> [hit #1]Trying to match 'GET /whatismyip' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20661]  core @0.002960> [hit #1]Trying to match 'GET /whatismyip' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20661]  core @0.003196> [hit #1]Trying to match 'GET /whatismyip' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20661]  core @0.003438> [hit #1]Trying to match 'GET /whatismyip' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20661]  core @0.003649> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20661]  core @0.003865> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20661]  core @0.004098> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20661]  core @0.004367> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20661]  core @0.004585> [hit #1]Trying to match 'GET /whatismyip' against /^\/item\/([^\/]+)$/ (generated from '/item/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20661]  core @0.004813> [hit #1]Trying to match 'GET /whatismyip' against /^\/whatismyip$/ (generated from '/whatismyip') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20661]  core @0.005138> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[20661]  core @0.006001> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[20661]  core @0.036556> [hit #1]response: 500 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[20701]  core @0.000012> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[20701]  core @0.039586> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[20701]  core @0.041131> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[20701]  core @0.050652> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+[20703]  core @0.000862> request: GET /whatismyip from - in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[20703]  core @0.002386> [hit #1]Trying to match 'GET /whatismyip' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20703]  core @0.002588> [hit #1]Trying to match 'GET /whatismyip' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20703]  core @0.002771> [hit #1]Trying to match 'GET /whatismyip' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20703]  core @0.002974> [hit #1]Trying to match 'GET /whatismyip' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20703]  core @0.003134> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20703]  core @0.003290> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20703]  core @0.003463> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20703]  core @0.003620> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20703]  core @0.003880> [hit #1]Trying to match 'GET /whatismyip' against /^\/item\/([^\/]+)$/ (generated from '/item/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20703]  core @0.004071> [hit #1]Trying to match 'GET /whatismyip' against /^\/whatismyip$/ (generated from '/whatismyip') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20703]  core @0.004222> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[20703]  core @0.004897> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[20703]  core @0.023839> [hit #1]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[20760]  core @0.000015> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[20760]  core @0.040860> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[20760]  core @0.042497> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[20760]  core @0.050025> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+[20762]  core @0.001255> request: GET /whatismyip from - in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[20762]  core @0.003055> [hit #1]Trying to match 'GET /whatismyip' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20762]  core @0.003344> [hit #1]Trying to match 'GET /whatismyip' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20762]  core @0.003582> [hit #1]Trying to match 'GET /whatismyip' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20762]  core @0.003830> [hit #1]Trying to match 'GET /whatismyip' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20762]  core @0.004136> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20762]  core @0.004358> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20762]  core @0.004604> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20762]  core @0.004851> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20762]  core @0.005069> [hit #1]Trying to match 'GET /whatismyip' against /^\/item\/([^\/]+)$/ (generated from '/item/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20762]  core @0.005285> [hit #1]Trying to match 'GET /whatismyip' against /^\/whatismyip$/ (generated from '/whatismyip') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20762]  core @0.005572> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[20762]  core @0.006413> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[20762]  core @0.023665> [hit #1]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[20807]  core @0.000014> initializing appdir to: `/var/www/listbubbles/bin/..' in /usr/local/share/perl/5.14.2/Dancer.pm l. 328
+[20807]  core @0.049252> PLACK_ENV is set (development) forcing PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 31
+[20807]  core @0.050827> loading Dancer::Handler::PSGI handler in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 45
+[20807]  core @0.060388> loading handler 'Dancer::Handler::PSGI' in /usr/local/share/perl/5.14.2/Dancer.pm l. 474
+[20809]  core @0.000860> request: GET /whatismyip from - in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[20809]  core @0.002295> [hit #1]Trying to match 'GET /whatismyip' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20809]  core @0.002544> [hit #1]Trying to match 'GET /whatismyip' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20809]  core @0.002744> [hit #1]Trying to match 'GET /whatismyip' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20809]  core @0.002920> [hit #1]Trying to match 'GET /whatismyip' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20809]  core @0.003078> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20809]  core @0.003343> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20809]  core @0.003543> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20809]  core @0.003724> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20809]  core @0.003880> [hit #1]Trying to match 'GET /whatismyip' against /^\/item\/([^\/]+)$/ (generated from '/item/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20809]  core @0.004060> [hit #1]Trying to match 'GET /whatismyip' against /^\/whatismyip$/ (generated from '/whatismyip') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20809]  core @0.004201> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[20809]  core @0.004970> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[20809]  core @0.021488> [hit #1]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
+[20810]  core @0.000941> request: GET /whatismyip from - in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 56
+[20810]  core @0.002427> [hit #1]Trying to match 'GET /whatismyip' against /^\/$/ (generated from '/') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20810]  core @0.002674> [hit #1]Trying to match 'GET /whatismyip' against /^\/login\/?$/ (generated from '/login/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20810]  core @0.002968> [hit #1]Trying to match 'GET /whatismyip' against /^\/logout$/ (generated from '/logout') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20810]  core @0.003193> [hit #1]Trying to match 'GET /whatismyip' against /^\/profile\/?$/ (generated from '/profile/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20810]  core @0.003397> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/?$/ (generated from '/user/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20810]  core @0.003574> [hit #1]Trying to match 'GET /whatismyip' against /^\/user\/([^\/]+)$/ (generated from '/user/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20810]  core @0.003751> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/?$/ (generated from '/list/?') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20810]  core @0.004001> [hit #1]Trying to match 'GET /whatismyip' against /^\/list\/([^\/]+)$/ (generated from '/list/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20810]  core @0.004230> [hit #1]Trying to match 'GET /whatismyip' against /^\/item\/([^\/]+)$/ (generated from '/item/:id') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20810]  core @0.004450> [hit #1]Trying to match 'GET /whatismyip' against /^\/whatismyip$/ (generated from '/whatismyip') in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 84
+[20810]  core @0.004646> [hit #1]  --> got 1 in /usr/local/share/perl/5.14.2/Dancer/Route.pm l. 102
+[20810]  core @0.005434> [hit #1]entering before hook in /usr/local/share/perl/5.14.2/Dancer/Hook.pm l. 58
+[20810]  core @0.022456> [hit #1]response: 200 in /usr/local/share/perl/5.14.2/Dancer/Handler.pm l. 179
