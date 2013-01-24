@@ -18,34 +18,73 @@ Version 0.01
 
 our $VERSION = '0.01';
 
-
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
+Parses web server logs created by Apache/nginx in combined format. Assumes no knowledge of the server which creates the log entries.
+
+Following the UNIX philosophy of "write programs that do one thing and do it well", this module does not attempt to validate any of the data/fields (e.g. match the IP address via a regex or some other method). This module assumes that the logs are already written by a web server daemon, and whether the data are "correct" or not is up to the end user. This module just parses it.
 
     use Parse::AccessLog;
 
-    my $p = Parse::AccessLog->new();
+    my $p = Parse::AccessLog->new;
 
-    $p->parse;
-# remote_addr remote_user time_local request status bytes_sent referer user_agent
+    # The parse() method is the worker, and only one you should call (other
+    # than new() as a constructor).
+    #
+    # The parse() method Does What You Want (probably). It returns a hashref
+    # (or array of hashrefs) with the following fields:
+    #
+    # remote_addr remote_user time_local request status bytes_sent referer user_agent
+
+    # returns one hashref
+    my $log_line = q{127.0.0.1 - - [11/Jan/2013:17:31:36 -0600] "GET / HTTP/1.1" 200 612 "-" "HTTP-Tiny/0.022"};
+    my $rec = $p->parse($log_line);
 
     ...
 
+    # returns two hashrefs...
+    my @log_lines = (
+        q{127.0.0.1 - - [11/Jan/2013:17:31:36 -0600] "GET / HTTP/1.1" 200 612 "-" "HTTP-Tiny/0.022"},
+        q{127.0.0.1 - - [11/Jan/2013:17:31:38 -0600] "GET / HTTP/1.1" 200 612 "-" "HTTP-Tiny/0.022"},
+    );
+    my @recs = $p->parse( @log_lines );
+
+    ...
+
+    # returns a hashref for each line in 'access.log'...
+    my @recs = $p->parse( '/var/log/nginx/access.log' );
+
 =head1 SUBROUTINES/METHODS
 
-=head2 new
+=head2 new()
 
-=cut
+Constructor, creates a Parse::AccessLog parser object. Use of new() is
+optional, since the parse() method can be called as a class method also.
+
+=cut 
 
 sub new {
     my $class = shift;
     my $self = {};
-
     return bless $self, $class;
 }
 
-=head2 parse
+=head2 parse()
+
+Accepts a scalar or an array. If a scalar, can be either one line of an access
+log file, or can be the full path (absolute or relative) to an access log (e.g.
+/var/log/apache2/access.log). If an array, expects each element to be a line
+from an access log file. Will return either a single hashref or a list of
+hashrefs with the following keys:
+
+    remote_addr
+    remote_user
+    time_local
+    request
+    status
+    bytes_sent
+    referer
+    user_agent
 
 =cut
 
@@ -96,6 +135,10 @@ sub parse {
 
     return $hr;
 }
+
+=head1 SEE ALSO
+
+http://en.wikipedia.org/w/index.php?title=Unix_philosophy&oldid=525612531
 
 =head1 AUTHOR
 
