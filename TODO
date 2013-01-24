@@ -1,0 +1,7 @@
+
+0. Remove File::Slurp as a dependency and read/write files using
+   standard Perl I/O
+
+1. Add 'formats', e.g. 'combined', 'common', as well as a way of specifying a custom format.
+
+
