@@ -1,51 +1,3 @@
-#!perl
-
-use strict;
-use warnings;
-use File::Slurp;
-use File::Temp;
-use Carp;
-use Test::More tests => 8;
-
-BEGIN {
-    use_ok( 'Parse::AccessLog' ) || print "Bail out!\n";
-}
-
-my $p = new_ok('Parse::AccessLog');
-my $data = do { local $/; <DATA> };
-
-my $fh = File::Temp->new;
-my $fname = $fh->filename;
-if ( ! write_file($fname, $data) ) {
-    croak("Can't write file [$fname]: $!");
-}
-
-my @recs = $p->parse($fname);
-is(@recs, 665, 'Parsed 665 entries (lines) from file' );
-
-my %temp;
-my @uniq_ips = grep { !$temp{$_->{remote_addr}}++ } @recs;
-is(@uniq_ips, 128, 'Got 128 unique IPs');
-
-# get all entries with a referer string
-my @referers = grep { $_->{referer} ne '-' } @recs;
-is( @referers, 111, 'Got 111 lines with a referer string' );
-
-my $most_hits = (sort { $temp{$b} <=> $temp{$a} } keys %temp )[0]; 
-is($most_hits, '216.96.86.26', 'Most frequent IP = 216.96.86.26');
-is($temp{$most_hits}, 261, 'Most frequent IP has 261 entries.');
-
-# possibly ipv6 (use a valid regex to make sure, not within the scope of this
-# module)
-my @ipv6 = grep { (length($_->{remote_addr}) > 15) ||
-                  (length($_->{remote_addr}) < 4)
-           } @recs;
-is(@ipv6, 19, 'Got 19 IPv6 records.');
-#say $_->{remote_addr} for @ipv6;
-
-
-__END__
-::1 - - [21/Jan/2013:17:55:52 -0600] "POST / HTTP/1.1" 405 173 "-" "PHP-SOAP/5.4.10"
 216.96.86.26 - - [17/Jan/2013:13:20:44 -0600] "HEAD / HTTP/1.1" 302 0 "-" "curl/7.21.4 (universal-apple-darwin11.0) libcurl/7.21.4 OpenSSL/0.9.8r zlib/1.2.5"
 216.96.86.26 - - [17/Jan/2013:13:22:05 -0600] "HEAD / HTTP/1.0" 302 0 "-" "-"
 216.96.86.26 - - [17/Jan/2013:13:22:16 -0600] "HEAD / HTTP/1.0" 302 0 "-" "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.18) Gecko/20081112 Fedora/2.0.0.18-1.fc8 Firefox/2.0.0.18"
@@ -102,6 +54,7 @@ __END__
 173.199.119.59 - - [17/Jan/2013:13:50:21 -0600] "GET /blog/tag/terminal/ HTTP/1.1" 200 8216 "-" "Mozilla/5.0 (compatible; AhrefsBot/4.0; +http://ahrefs.com/robot/)"
 216.96.86.26 - - [17/Jan/2013:14:07:20 -0600] "GET / HTTP/1.1" 302 5 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:18.0) Gecko/20100101 Firefox/18.0"
 216.96.86.26 - - [17/Jan/2013:14:07:21 -0600] "GET /blog/ HTTP/1.1" 200 12993 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:18.0) Gecko/20100101 Firefox/18.0"
+216.96.86.26 - - [17/Jan/2013:14:07:21 -0600] "GET /blog/wp-content/plugins/codecolorer/codecolorer.css?ver=0.9.9 HTTP/1.1" 304 0 "http://mysite.com/blog/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:18.0) Gecko/20100101 Firefox/18.0"
 216.96.86.26 - - [17/Jan/2013:14:07:22 -0600] "GET /blog/wp-content/themes/koi-improved/yellow.css HTTP/1.1" 404 13019 "http://mysite.com/blog/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:18.0) Gecko/20100101 Firefox/18.0"
 216.96.86.26 - - [17/Jan/2013:14:07:26 -0600] "GET /blog/about/ HTTP/1.1" 200 2573 "http://mysite.com/blog/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:18.0) Gecko/20100101 Firefox/18.0"
 216.96.86.26 - - [17/Jan/2013:14:07:26 -0600] "GET /blog/wp-content/plugins/codecolorer/codecolorer.css?ver=0.9.9 HTTP/1.1" 304 0 "http://mysite.com/blog/about/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:18.0) Gecko/20100101 Firefox/18.0"
