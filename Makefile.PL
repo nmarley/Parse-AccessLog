@@ -12,6 +12,12 @@ WriteMakefile(
       ? ('LICENSE'=> 'perl')
       : ()),
     PL_FILES            => {},
+    BUILD_REQUIRES => {
+        'File::Temp' => 0,
+        'File::Slurp' => 0,
+        'FreezeThaw' => 0,
+        'Text::Diff' => 0,
+    },
     PREREQ_PM => {
         'Test::More' => 0,
     },

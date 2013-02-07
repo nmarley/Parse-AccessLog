@@ -1,0 +1,12 @@
+.DS_Store
+Makefile
+*.old
+Test-*
+blib
+pm_to_blib
+Build
+*.bak
+_build
+MYMETA.yml
+MYMETA.json
+Parse-AccessLog-*
