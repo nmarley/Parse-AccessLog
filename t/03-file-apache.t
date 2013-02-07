@@ -2,12 +2,10 @@
 
 use strict;
 use warnings;
-use File::Slurp;
 use File::Temp;
 use Carp;
+use File::Slurp qw(write_file);
 use Test::More tests => 6;
-use Data::Dumper;
-use feature qw(say);
 
 BEGIN {
     use_ok( 'Parse::AccessLog' ) || print "Bail out!\n";

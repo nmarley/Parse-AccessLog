@@ -3,8 +3,6 @@ package Parse::AccessLog;
 use 5.006;
 use strict;
 use warnings;
-use feature qw(say);
-use File::Slurp;
 
 =head1 NAME
 
@@ -28,14 +26,6 @@ Following the UNIX philosophy of "write programs that do one thing and do it wel
 
     my $p = Parse::AccessLog->new;
 
-    # The parse() method is the worker, and only one you should call (other
-    # than new() as a constructor).
-    #
-    # The parse() method Does What You Want (probably). It returns a hashref
-    # (or array of hashrefs) with the following fields:
-    #
-    # remote_addr remote_user time_local request status bytes_sent referer user_agent
-
     # returns one hashref
     my $log_line = q{127.0.0.1 - - [11/Jan/2013:17:31:36 -0600] "GET / HTTP/1.1" 200 612 "-" "HTTP-Tiny/0.022"};
     my $rec = $p->parse($log_line);
@@ -54,7 +44,7 @@ Following the UNIX philosophy of "write programs that do one thing and do it wel
     # returns a hashref for each line in 'access.log'...
     my @recs = $p->parse( '/var/log/nginx/access.log' );
 
-=head1 SUBROUTINES/METHODS
+=head1 METHODS
 
 =head2 new()
 
@@ -71,11 +61,14 @@ sub new {
 
 =head2 parse()
 
-Accepts a scalar or an array. If a scalar, can be either one line of an access
+This is the only method (other than the constructor new()), and can be called
+as a class method or as an object method. It Does What You Want (probably).
+
+Accepts a scalar or a list. If a scalar, can be either one line of an access
 log file, or can be the full path (absolute or relative) to an access log (e.g.
-/var/log/apache2/access.log). If an array, expects each element to be a line
-from an access log file. Will return either a single hashref or a list of
-hashrefs with the following keys:
+/var/log/apache2/access.log). If a list, expects each element to be a line from
+an access log file. Will return either a single hashref or a list of hashrefs
+with the following keys:
 
     remote_addr
     remote_user
@@ -92,7 +85,7 @@ sub parse {
     # don't parse anything in void context
     return unless defined wantarray;
 
-    my $self = shift;
+    my $self    = shift;
     my $class   = ref($self) || $self;
 
     # output determined by input data
@@ -107,12 +100,15 @@ sub parse {
 
     if ( -f $line ) {
         my $filename = $line;
-        chomp(my @lines = read_file( $filename ));
+        open(my $fh, '<', $filename);
+        chomp(my @lines = <$fh>);
+        close($fh);
         return map { $self->parse($_) } @lines;
     }
 
     my $hr;
 
+    # this is where the magic happens...
     if ( $line =~ /^ (\S+)         # remote_addr
                    \ \-\ (\S+)     # remote_user
                    \ \[([^\]]+)\]  # time_local
@@ -146,11 +142,7 @@ Nathan Marley, C<< <nathan.marley at gmail.com> >>
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-parse-accesslog at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Parse-AccessLog>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
-
-
+Please report any bugs through github at https://github.com/nmarley/Parse-AccessLog.
 
 
 =head1 SUPPORT
@@ -159,31 +151,23 @@ You can find documentation for this module with the perldoc command.
 
     perldoc Parse::AccessLog
 
-
 You can also look for information at:
 
-=over 4
+=over 3
 
-=item * RT: CPAN's request tracker (report bugs here)
+=item * MetaCPAN
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Parse-AccessLog>
+L<https://metacpan.org/module/Parse::AccessLog>
 
-=item * AnnoCPAN: Annotated CPAN documentation
+=item * GitHub
 
-L<http://annocpan.org/dist/Parse-AccessLog>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Parse-AccessLog>
+L<https://github.com/nmarley/Parse-SSH2-PublicKey>
 
 =item * Search CPAN
 
 L<http://search.cpan.org/dist/Parse-AccessLog/>
 
 =back
-
-
-=head1 ACKNOWLEDGEMENTS
 
 
 =head1 LICENSE AND COPYRIGHT

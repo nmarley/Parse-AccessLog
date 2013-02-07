@@ -2,9 +2,9 @@
 
 use strict;
 use warnings;
-use File::Slurp;
 use File::Temp;
 use Carp;
+use File::Slurp qw(write_file);
 use Test::More tests => 8;
 
 BEGIN {

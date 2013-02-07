@@ -2,8 +2,6 @@
 
 use strict;
 use warnings;
-use feature qw(say);
-use Data::Dumper;
 use Test::More tests => 27;
 
 # only used for testing...

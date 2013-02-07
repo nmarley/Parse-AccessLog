@@ -2,11 +2,6 @@
 
 use strict;
 use warnings;
-use Data::Dumper;
-use File::Slurp;
-use File::Temp;
-use Carp;
-use feature qw(say);
 use Test::More tests => 3;
 
 BEGIN {
