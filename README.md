@@ -30,6 +30,6 @@ perldoc command.
 
 ## License
 
-Released under the MIT License.  See the [LICENSE][LICENSE.md] file for further details.
+Released under the MIT License.  See the [LICENSE][] file for further details.
 
-[license]: LICENSE.md
+[license]: LICENSE
